@@ -1,0 +1,31 @@
+<html lang="en">
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Assignment 2</title>
+    </head>
+    <body>
+            <script>
+/*Create a function prepareFood that takes following parameters
+  o Table number
+  o Items
+  o Callback (a function that will be called after food is prepared)
+• Create a function serveFood that takes following parameters
+  o Table number
+  o items
+*/           var items = ["Burger","pasta","coke"];
+             let serveFood = function(tablenumber, items){
+                 console.log("serving food for items - ",items);
+             }
+             let prepareFood = function(tablenumber, items, callback){
+                 console.log("preparing food for items - ",items);
+                 callback(tablenumber, items);
+             }
+             
+             prepareFood(items.length, items, serveFood);
+             
+            </script>
+    </body>
+</html>
